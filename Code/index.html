@@ -1,0 +1,28 @@
+<! index.html !>
+<!  Ashwini Kurady <ashwinikurady@email.arizona.edu !>
+<! This file includes all the necessary paths to visualize the COVID spread through the use of d3.js and topojson features for choropleth mapping!>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="d3.v5.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+<script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<svg width="1080" height="600"></svg>
+<div id="div2"></div>
+
+    	<div style="position: absolute; right: 1em; top: 1em">
+      	<button id="perCapita">Per Capita</button>
+      	<button id="positive">(+)Cases</button>
+      	<button id="negative">(-)Cases</button>
+      	<button id="tests">#tests</button>
+      	<button id="recovered">#recovered</button>
+      	<button id="deaths">#deaths</button>
+<script type="text/javascript" src="project.js"></script>
+</body>
+</html>
